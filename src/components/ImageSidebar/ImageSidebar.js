@@ -1,11 +1,13 @@
 import React from 'react';
+import styles from './ImageSidebar.module.css';
+import ProfilePic from './assets/profile-pic.png';
 
-import ProfilePic from './profile-pic.png';
-
-export default function ImageSidebar() {
+export default function ImageSidebar({ className }) {
     return (
-        <div>
-            <img src={ProfilePic} alt="Ravindu Ubeysinghe" />
+        <div className={className}>
+            <div className={styles.imageContainer}>
+                <img className={styles.image} src={ProfilePic} alt="Ravindu Ubeysinghe" />
+            </div>
         </div>
     )
 }

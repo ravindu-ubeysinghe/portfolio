@@ -2,10 +2,33 @@
   text-align: center;
   background-color: var(--default-bg);
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: block;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.col4 {
+  display: inline-block;
+  width: 30%;
+}
+
+.col8 {
+  display: inline-block;
+  width: 70%;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+@media (max-width: 768px) {
+  .col8,
+  .col4 {
+    width: 100%;
+    display: block;
+  }
 }
