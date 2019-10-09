@@ -1,0 +1,15 @@
+.rightSidebar {
+    display: flex;
+    float: right;
+    width: calc(100% - 300px);
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.proToggle,
+.qualToggle {
+    font-size: 20px;
+    color: #fff;
+}

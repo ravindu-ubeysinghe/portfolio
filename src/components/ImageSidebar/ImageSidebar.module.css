@@ -1,3 +1,12 @@
+.imageSidebar {
+    width: 300px;
+    box-shadow: 0px 0px 25px #171717;
+    min-height: 100vh;
+    display: inline-block;
+    float: left;
+    padding: 0px 30px;
+}
+
 .imageContainer {
     display: flex;
     min-height: 100vh;
@@ -9,4 +18,9 @@
 .image {
     max-width: 250px;
     max-height: 400px;
+}
+
+.titleBlock p {
+    font-size: 15px;
+    margin-top: 10px;
 }
