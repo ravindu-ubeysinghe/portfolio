@@ -2,8 +2,8 @@ import React from 'react';
 import cx from 'classnames';
 
 // Import local components
-import ImageSidebar from '../ImageSidebar/ImageSidebar';
-import RightSidebar from '../RightSidebar/RightSidebar';
+import ImageSidebar from '../../views/ImageSidebar/ImageSidebar';
+import RightSidebar from '../../views/RightSidebar/RightSidebar';
 
 // Import main stylesheet
 import styles from './App.module.css';

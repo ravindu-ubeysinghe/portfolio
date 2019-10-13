@@ -4,7 +4,7 @@
   min-height: 100vh;
   display: block;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #222;
 }
 
 .col4 {

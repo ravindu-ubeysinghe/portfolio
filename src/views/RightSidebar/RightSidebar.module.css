@@ -1,0 +1,32 @@
+.rightSidebar {
+    display: flex;
+    float: right;
+    width: calc(100% - 300px);
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #000;
+}
+
+.proToggle,
+.qualToggle {
+    font-size: 30px;
+    color: #fff;
+}
+
+.proToggle:focus,
+.proToggle:hover,
+.proToggle:active:focus,
+.qualToggle:focus,
+.qualToggle:hover,
+.qualToggle:active:focus {
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+}
+
+.accordionContent {
+    font-weight: 200;
+    color: #f5f5f5;
+}

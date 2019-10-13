@@ -1,10 +1,13 @@
 .imageSidebar {
     width: 300px;
-    box-shadow: 0px 0px 25px #171717;
     min-height: 100vh;
     display: inline-block;
     float: left;
     padding: 0px 30px;
+}
+
+.imageSidebar h2 {
+    font-size: var(--h2);
 }
 
 .imageContainer {
@@ -16,11 +19,13 @@
 }
 
 .image {
-    max-width: 250px;
-    max-height: 400px;
+    max-width: 75px;
+    max-height: 200px;
 }
 
 .titleBlock p {
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 10px;
+    font-weight: 200;
+    line-height: 22px;
 }

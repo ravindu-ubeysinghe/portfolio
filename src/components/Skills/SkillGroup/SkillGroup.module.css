@@ -1,0 +1,11 @@
+.skillContainer {
+    vertical-align: top;
+    text-align: left;
+    font-size: 15px;
+    width: auto;
+    max-width: 200px;
+}
+
+.skillContainer ul {
+    padding-left: 15px;;
+}
