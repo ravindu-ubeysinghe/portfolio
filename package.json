@@ -5,9 +5,12 @@
   "dependencies": {
     "classname": "0.0.0",
     "classnames": "^2.2.6",
+    "lodash": "^4.17.15",
     "react": "^16.10.2",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.10.2",
+    "react-responsive-modal": "^4.0.1",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-snap": "^1.23.0"
   },

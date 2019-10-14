@@ -2,8 +2,10 @@
     width: 300px;
     min-height: 100vh;
     display: inline-block;
-    float: left;
     padding: 0px 30px;
+    left: 0;
+    top: 0;
+    position: fixed;
 }
 
 .imageSidebar h2 {
@@ -28,4 +30,11 @@
     margin-top: 10px;
     font-weight: 200;
     line-height: 22px;
+}
+
+.socialLogo {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin: auto 10px;
 }

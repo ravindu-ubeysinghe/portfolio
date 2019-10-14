@@ -1,0 +1,16 @@
+.title {
+    display: block;
+    font-weight: 200;
+}
+
+.location {
+    font-size: 11px;
+    font-weight: 200;
+}
+
+.duration {
+    font-size: 11px;
+    font-weight: 200;
+    vertical-align: initial;
+    margin-left: 5px;
+}

@@ -16,11 +16,22 @@ export const skillList = [
         ]
     },
     {
+        title: 'Backend + CMS',
+        skills: [
+            'PHP',
+            'WordPress',
+            'Magento',
+            'Shopify',
+            'Laravel',
+        ]
+    },
+    {
         title: 'Server + Cloud',
         skills: [
             'AWS',
             'Google Cloud Platform',
-            'Elastic Load Balancing + Auto Scaling',
+            'Elastic Load Balancing',
+            'Auto Scaling Groups',
             'LAMP',
             'Vagrant',
             'Docker',
@@ -37,16 +48,6 @@ export const skillList = [
             'SSH + SCP',
             'Visual Studio Code',
             'ATOM',
-        ]
-    },
-    {
-        title: 'Backend + CMS',
-        skills: [
-            'PHP',
-            'WordPress',
-            'Magento',
-            'Shopify',
-            'Laravel',
         ]
     },
 ];

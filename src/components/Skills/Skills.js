@@ -8,7 +8,7 @@ export default function Skills() {
     return (
         <div className={styles.skillGroup}>
             {skillList.map(({ title ='', skills = []}) => 
-                <SkillGroup title={title} skills={skills} />
+                <SkillGroup key={title} title={title} skills={skills} />
             )}
         </div>
     )
