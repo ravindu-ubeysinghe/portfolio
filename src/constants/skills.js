@@ -48,6 +48,7 @@ export const skillList = [
             'SSH + SCP',
             'Visual Studio Code',
             'ATOM',
+            'Adobe Photoshop',
         ]
     },
 ];
