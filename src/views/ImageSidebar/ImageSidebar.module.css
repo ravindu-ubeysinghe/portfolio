@@ -35,3 +35,27 @@
     display: inline-block;
     margin: auto 10px;
 }
+
+
+/* Scroll to bottom */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+.arrow {
+  position: fixed;
+  bottom: 20px;
+  width: 30px;
+  height: 30px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAA1UlEQVRoge3YOw7CMBBF0bsJItj/UtIhKlKwnFCEkaIoA47jr3i3ShHbc0oblFJKKaWU+udG4AEMtQfZaWCZbQz5+Q7MwERbmIFlppllxp9dgOdnwQu4ZRstvO1M19iFNTHRCG+DGpjTCG+jkphkCG/DEpjkCG/jnJhsCO+AHJjsCO+glJhiCO/AFJjiCO/gM5hqCG+AGEx1hDfIEUwzCCsG0xzCOoJpFmGFYJpHWN8w3SCsPUx3CGt9m5s23y3dOoNaY7pFWPZY0OpjhlJKKaWUUh32BhvedBSh6z8kAAAAAElFTkSuQmCC);
+  background-size: contain;
+  animation: bounce 2s infinite;
+}

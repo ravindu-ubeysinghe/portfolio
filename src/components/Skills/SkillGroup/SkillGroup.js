@@ -7,7 +7,7 @@ import styles from './SkillGroup.module.css';
 
 export default function SkillGroup({ title = '', skills = []}) {
     const ccTitle = camelCase(title);
-    const className = cx(['col-sm-3', styles.skillContainer, styles[ccTitle]]);
+    const className = cx([styles.skillContainer, styles[ccTitle]]);
     return (
         <div className={className}>
             <strong>{title}</strong>
