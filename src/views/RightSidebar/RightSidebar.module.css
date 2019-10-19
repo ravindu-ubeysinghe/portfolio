@@ -1,7 +1,6 @@
 .rightSidebar {
     display: flex;
-    float: right;
-    width: calc(100% - 300px);
+    flex: 1;
     align-content: center;
     justify-content: center;
     flex-direction: column;
@@ -13,6 +12,7 @@
 .qualToggle {
     font-size: 30px;
     color: #fff;
+    white-space: normal;
 }
 
 .proToggle:focus,

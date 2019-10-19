@@ -7,7 +7,7 @@ import Work from '../../components/Work/Work';
 
 import styles from './RightSidebar.module.css';
 
-export default function RightSidebar({ className }) {
+export default function RightSidebar() {
     
     return (
         <div className={styles.rightSidebar}>
