@@ -8,7 +8,8 @@ export const skillList = [
             'React Context',
             'jQuery',
             'JavaScript',
-            'HTML5',
+            'AJAX',
+            'HTML',
             'CSS3',
             'SASS',
             'Bootstrap',
@@ -18,11 +19,13 @@ export const skillList = [
     {
         title: 'Backend + CMS',
         skills: [
-            'PHP',
             'WordPress',
-            'Magento',
-            'Shopify',
+            'ACF + Custom Posts',
+            'PHP + MySQL',
+            'RESTful APIs',
             'Laravel',
+            'Magento',
+            'Shopify + Liquid',
         ]
     },
     {
@@ -32,6 +35,7 @@ export const skillList = [
             'Google Cloud Platform',
             'Elastic Load Balancing',
             'Auto Scaling Groups',
+            'CloudFront',
             'LAMP',
             'Vagrant',
             'Docker',
@@ -43,12 +47,13 @@ export const skillList = [
             'GULP',
             'Webpack',
             'ESLint',
-            'Jest',
+            'CloudFlare',
             'Jenkins',
             'SSH + SCP',
+            'CSF',
             'Visual Studio Code',
             'ATOM',
-            'Adobe Photoshop',
+            'Photoshop',
         ]
     },
 ];
