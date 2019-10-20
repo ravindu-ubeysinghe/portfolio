@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import camelCase from 'lodash/camelCase';
+import { camelCase } from 'lodash';
 import cx from 'classnames';
 
 import styles from './SkillGroup.module.css';

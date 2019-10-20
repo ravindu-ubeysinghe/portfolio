@@ -39,19 +39,26 @@
 
 .workBlock {
     display: flex;
-    margin: 20px 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .workBlock>div:nth-child(1) {
-    flex-basis: 300px;
+    flex-basis: 350px;
 }
 
 .workBlock>div:nth-child(2) {
-    flex-basis: 300px;
+    flex-basis: 350px;
 }
 
 @media (min-width: 1920px) {
     .rightSidebar {
         flex: 2;
+    }
+}
+
+@media(max-width: 768px) {
+    .workBlock>div {
+        flex-basis: 100%;
     }
 }

@@ -18,13 +18,13 @@
     border-top: none;
 }
 
-.modalHeader {
-    padding-bottom: 0px;
-}
-
 .modalBody {
     padding-top: 0px;
     padding-bottom: 0px;
+}
+
+.modalBody strong {
+    font-weight: 500;
 }
 
 .modalFooter {
@@ -37,4 +37,41 @@
     width: 50px;
     padding-top: 5px;
     border-bottom: 1px solid #000;
+}
+
+.modalBody ul {
+    padding-left: 0px;
+    margin-left: -5px;
+}
+
+.modalBody li {
+    display: inline-block;
+    text-align: left;
+    margin: 5px;
+    font-weight: 600;
+    padding: 0px 10px;
+    color: #fff;
+}
+
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.frontend {
+    background-color: #78a22f;
+}
+
+.serverCloud {
+    background-color: #281e6b;
+}
+
+.backendCms {
+    background-color: #a94442;
+}
+
+.tools, .other {
+    background-color: #2f2f2e;
 }

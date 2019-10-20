@@ -11,3 +11,7 @@
     font-size: 15px;
     border-bottom: 1px solid;
 }
+
+.projectsList ul {
+    padding-left: 0px;
+}

@@ -21,7 +21,8 @@ export const skillList = [
         skills: [
             'WordPress',
             'ACF + Custom Posts',
-            'PHP + MySQL',
+            'PHP',
+            'MySQL',
             'RESTful APIs',
             'Laravel',
             'Magento',
