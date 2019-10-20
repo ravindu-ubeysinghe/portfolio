@@ -15,6 +15,15 @@
     color: #fff;
     white-space: normal;
     padding-left: 0px;
+    text-align: left;
+}
+
+.proToggle:after, .qualToggle:after {
+    content: "";
+    display: block;
+    width: 50px;
+    padding-top: 5px;
+    border-bottom: 1px solid #fff;
 }
 
 .proToggle:focus, .proToggle:hover, .proToggle:active:focus, .qualToggle:focus, .qualToggle:hover, .qualToggle:active:focus {
@@ -26,6 +35,19 @@
 .accordionContent {
     font-weight: 200;
     color: #f5f5f5;
+}
+
+.workBlock {
+    display: flex;
+    margin: 20px 10px;
+}
+
+.workBlock>div:nth-child(1) {
+    flex-basis: 300px;
+}
+
+.workBlock>div:nth-child(2) {
+    flex-basis: 300px;
 }
 
 @media (min-width: 1920px) {

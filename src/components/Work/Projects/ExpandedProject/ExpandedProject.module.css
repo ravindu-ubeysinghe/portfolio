@@ -1,0 +1,40 @@
+.modal {
+    background-color: #f5f5f5;
+    color: #000;
+    border-radius: 0px;
+    padding: 20px;
+}
+
+.modalOverlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+}
+
+.modalHeader, .modalFooter {
+    border-bottom: none;
+    border-top: none;
+}
+
+.modalHeader {
+    padding-bottom: 0px;
+}
+
+.modalBody {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.modalFooter {
+    padding-top: 0px;
+}
+
+.modalTitle:after {
+    content: "";
+    display: block;
+    width: 50px;
+    padding-top: 5px;
+    border-bottom: 1px solid #000;
+}

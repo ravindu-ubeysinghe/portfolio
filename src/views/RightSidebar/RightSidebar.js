@@ -1,4 +1,5 @@
 import React from 'react';
+import cx from 'classnames';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
@@ -19,7 +20,7 @@ export default function RightSidebar() {
                     </Accordion.Toggle>
                     </Card.Header>
                     <Accordion.Collapse eventKey="0">
-                    <Card.Body className={styles.accordionContent}>
+                    <Card.Body className={cx([styles.workBlock, styles.accordionContent])}>
                         <Work />
                     </Card.Body>
                     </Accordion.Collapse>
