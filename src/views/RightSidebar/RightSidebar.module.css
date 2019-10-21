@@ -85,4 +85,7 @@
     .workBlock>div {
         flex-basis: 100%;
     }
+    .rightSidebar {
+        padding: 30px;
+    }
 }
