@@ -18,7 +18,7 @@ export default function RightSidebar() {
 
     function AccordionToggle({ children, eventKey, type }) {
         const decoratedOnClick = useAccordionToggle(eventKey, () => {
-            const toggle = (state) => type === 'pro' ? { proToggle: !state.proToggle } : { qualToggle: !state.qualToggle };
+            const toggle = (state) => type === 'pro' ? { proToggle: !state.proToggle, qualToggle: false } : { qualToggle: !state.qualToggle, proToggle: false };
             setExpanded((state) => ({
                 ...state,
                 ...toggle(state),
