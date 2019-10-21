@@ -44,14 +44,38 @@
 }
 
 .workBlock>div:nth-child(1) {
-    flex-basis: 350px;
+    flex-basis: 400px;
 }
 
 .workBlock>div:nth-child(2) {
-    flex-basis: 350px;
+    flex-basis: 400px;
 }
 
-@media (min-width: 1920px) {
+.toggleIcon {
+    width: 30px;
+    height: 15px;
+    fill: #fff;
+}
+
+.open {
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.close {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.rotate {
+    -moz-transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+@media (min-width: 1921px) {
     .rightSidebar {
         flex: 2;
     }

@@ -36,7 +36,7 @@
     margin: auto 10px;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1921px) {
     .imageSidebar {
         flex-basis: auto;
         flex: 1;
