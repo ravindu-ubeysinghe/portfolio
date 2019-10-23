@@ -7,6 +7,7 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Skills from '../../components/Skills/Skills';
 import Work from '../../components/Work/Work';
+import ContactForm from '../../components/ContactForm/ContactForm';
 import arrow from './assets/arrow.svg';
 import styles from './RightSidebar.module.css';
 
@@ -72,6 +73,7 @@ export default function RightSidebar() {
                     </Accordion.Collapse>
                 </Card>
             </Accordion>
+            <ContactForm />
         </div>
     )
 }
