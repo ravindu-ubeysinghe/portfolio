@@ -75,12 +75,6 @@
     transition: all 0.5s linear;
 }
 
-@media (min-width: 1921px) {
-    .rightSidebar {
-        flex: 2;
-    }
-}
-
 @media(max-width: 768px) {
     .workBlock>div {
         flex-basis: 100%;

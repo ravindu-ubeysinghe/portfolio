@@ -7,6 +7,8 @@ export const projectList = [
             'PHP',
             'ACF + Custom Posts',
             'RESTful APIs',
+            'AWS',
+            'LAMP',
             'jQuery',
             'AJAX',
             'HTML',

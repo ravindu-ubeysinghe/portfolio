@@ -36,13 +36,10 @@ export default function ContactForm() {
     }
     return (
         <div className={styles.form}>
-            <p className={styles.title}>Say Hello:</p>
-            <label>Name</label>
-            <input type="text" name="name" onChange={handleChange} value={formData.name} className={styles.name} />
-            <label>Email</label>
-            <input type="text" name="email" onChange={handleChange} value={formData.email} className={styles.email}/>
-            <label>Message</label>
-            <input type="text" name="content" onChange={handleChange} value={formData.content} className={styles.content} />
+            <p className={styles.title}>Say Hello!</p>
+            <input type="text" name="name" onChange={handleChange} value={formData.name} className={styles.name} placeholder="Name" />
+            <input type="text" name="email" onChange={handleChange} value={formData.email} className={styles.email} placeholder="Email" />
+            <input type="text" name="content" onChange={handleChange} value={formData.content} className={styles.content} placeholder="Message" />
             <input type="text" name="ph" onChange={handleChange} value={formData.ph} className={styles.ph} />
             <button onClick={sendEmail} className={styles.submitBtn}>Send</button>
         </div>
