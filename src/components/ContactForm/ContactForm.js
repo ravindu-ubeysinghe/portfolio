@@ -12,6 +12,7 @@ export default function ContactForm() {
     });
 
     const [submit, setSubmit] = useState(false);
+    const [error, setError] = useState(false);
 
     const handleChange = (e) => {
         const name = e.target.name;
@@ -36,7 +37,13 @@ export default function ContactForm() {
         }).then(() => {
             // console.log(data);
             setSubmit(true);
+        }).catch(() => {
+            setError(true);
         });
+    }
+
+    if (error) {
+        return <div className={cx([styles.success, styles.form])}>Something went wrong, please try again in a jiffy</div>
     }
 
     if (submit) {
