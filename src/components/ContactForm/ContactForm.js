@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import cx from 'classnames';
 
 import styles from './ContactForm.module.css';
 
@@ -9,6 +10,8 @@ export default function ContactForm() {
         content: '',
         ph: '',
     });
+
+    const [submit, setSubmit] = useState(false);
 
     const handleChange = (e) => {
         const name = e.target.name;
@@ -28,12 +31,18 @@ export default function ContactForm() {
             body: JSON.stringify({
                 ...formData,
             })
-        }).then(function(response) {
+        }).then((response) => {
             return response.json();
-        }).then(function(data) {
-            console.log(data);
+        }).then(() => {
+            // console.log(data);
+            setSubmit(true);
         });
     }
+
+    if (submit) {
+        return <div className={cx([styles.success, styles.form])}>Your enquiry received. I{'\''}ll get back to you shortly</div>
+    }
+
     return (
         <div className={styles.form}>
             <p className={styles.title}>Say Hello!</p>

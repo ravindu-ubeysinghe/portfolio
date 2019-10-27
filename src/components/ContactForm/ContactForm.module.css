@@ -28,6 +28,12 @@
     margin-bottom: 20px;
 }
 
+.success {
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+}
+
 .ph {
     display: none;
 }
