@@ -62,7 +62,7 @@ export default function RightSidebar() {
                 <Card>
                     <Card.Header>
                         <AccordionToggle className={styles.qualToggle} as={Button} variant="link" eventKey="1" type="qual">
-                            Skills I Possess
+                            Technologies + Tools
                             <img src={arrow} alt="arrow" className={cx([styles.toggleIcon, expanded.qualToggle ? styles.open : styles.close])}></img>
                         </AccordionToggle>
                     </Card.Header>
