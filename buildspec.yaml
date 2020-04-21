@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo === Installing Node v12 ===
+      - curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+      - apt-get install -y nodejs
+  build:
+    commands:
+      - echo === Installing Dependencies ===
+      - npm install
+  post_build:
+    commands:
+      - echo === Building the App ===
+      - npm run build
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: dist
