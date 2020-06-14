@@ -48,29 +48,25 @@ export default function RightSidebar() {
             <Accordion defaultActiveKey="0">
                 <Card>
                     <Card.Header>
-                        <AccordionToggle className={styles.proToggle} as={Button} variant="link" eventKey="0" type="pro">
+                        <div className={styles.proToggle} as={Button} variant="link" eventKey="0" type="pro">
                             Work History + Previous Projects
                             <img src={arrow} alt="arrow" className={cx([styles.toggleIcon, expanded.proToggle ? styles.open : styles.close])}></img>
-                        </AccordionToggle>
+                        </div>
                     </Card.Header>
-                    <Accordion.Collapse eventKey="0">
                         <Card.Body className={cx([styles.workBlock, styles.accordionContent])}>
                             <Work />
                         </Card.Body>
-                    </Accordion.Collapse>
                 </Card>
                 <Card>
                     <Card.Header>
-                        <AccordionToggle className={styles.qualToggle} as={Button} variant="link" eventKey="1" type="qual">
+                        <div className={styles.qualToggle} as={Button} variant="link" eventKey="1" type="qual">
                             Technologies + Tools
                             <img src={arrow} alt="arrow" className={cx([styles.toggleIcon, expanded.qualToggle ? styles.open : styles.close])}></img>
-                        </AccordionToggle>
+                        </div>
                     </Card.Header>
-                    <Accordion.Collapse eventKey="1">
                         <Card.Body className={styles.accordionContent}>
                             <Skills />
                         </Card.Body>
-                    </Accordion.Collapse>
                 </Card>
             </Accordion>
             <ContactForm />

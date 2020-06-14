@@ -7,6 +7,7 @@ export const skillList = [
             'Redux Saga',
             'React Context',
             'jQuery',
+            'Backbone JS',
             'Typescript',
             'JavaScript (ES6)',
             'Axios',
