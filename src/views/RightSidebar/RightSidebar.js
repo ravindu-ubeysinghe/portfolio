@@ -50,7 +50,7 @@ export default function RightSidebar() {
                     <Card.Header>
                         <div className={styles.proToggle} as={Button} variant="link" eventKey="0" type="pro">
                             Work History + Previous Projects
-                            <img src={arrow} alt="arrow" className={cx([styles.toggleIcon, expanded.proToggle ? styles.open : styles.close])}></img>
+                            <img src={arrow} alt="arrow" className={cx(styles.toggleIcon, styles.open)}></img>
                         </div>
                     </Card.Header>
                         <Card.Body className={cx([styles.workBlock, styles.accordionContent])}>
@@ -61,7 +61,7 @@ export default function RightSidebar() {
                     <Card.Header>
                         <div className={styles.qualToggle} as={Button} variant="link" eventKey="1" type="qual">
                             Technologies + Tools
-                            <img src={arrow} alt="arrow" className={cx([styles.toggleIcon, expanded.qualToggle ? styles.open : styles.close])}></img>
+                            <img src={arrow} alt="arrow" className={cx(styles.toggleIcon, styles.open)}></img>
                         </div>
                     </Card.Header>
                         <Card.Body className={styles.accordionContent}>
