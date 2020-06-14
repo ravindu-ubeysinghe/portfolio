@@ -117,6 +117,7 @@ export const projectList = [
         description: 'Maintain Me is a gardening services provider based in Sydney New South Wales and building their website was one of the first and most interesting WordPress projects that I was involved in, during my time at Weboptimizers Pty Ltd. Though it may seem quite simple, it includes a complex booking system that utilises Google\'s Calendar API and comprehensive user portals for all parties involved including the customers, workers and the admins, which are seamlessly integrated with the organisation\'s CRM system. ',
         skills: [
             'WordPress',
+            'ReactJS',
             'PHP',
             'ACF + Custom Posts',
             'RESTful APIs',
