@@ -24,7 +24,7 @@ export default function ContactForm() {
     }
 
     const sendEmail = () => {
-        fetch('https://data.ravindu.com.au/email/send', {
+        fetch('https://data.ravinduu.com/email/send', {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json',
