@@ -14,15 +14,18 @@ import styles from './RightSidebar.module.css';
 export default function RightSidebar() {
     const [expanded, setExpanded] = useState({
         proToggle: true,
-        qualToggle: false,
+        qualToggle: false
     });
 
     function AccordionToggle({ children, eventKey, type }) {
         const decoratedOnClick = useAccordionToggle(eventKey, () => {
-            const toggle = (state) => type === 'pro' ? { proToggle: !state.proToggle, qualToggle: false } : { qualToggle: !state.qualToggle, proToggle: false };
+            const toggle = (state) =>
+                type === 'pro'
+                    ? { proToggle: !state.proToggle, qualToggle: false }
+                    : { qualToggle: !state.qualToggle, proToggle: false };
             setExpanded((state) => ({
                 ...state,
-                ...toggle(state),
+                ...toggle(state)
             }));
         });
 
@@ -40,36 +43,60 @@ export default function RightSidebar() {
     AccordionToggle.propTypes = {
         children: PropTypes.node.isRequired,
         eventKey: PropTypes.string.isRequired,
-        type: PropTypes.string.isRequired,
-    }
-    
+        type: PropTypes.string.isRequired
+    };
+
     return (
         <div className={styles.rightSidebar}>
             <Accordion defaultActiveKey="0">
                 <Card>
                     <Card.Header>
-                        <div className={styles.proToggle} as={Button} variant="link" eventKey="0" type="pro">
+                        <div
+                            className={styles.proToggle}
+                            as={Button}
+                            variant="link"
+                            eventKey="0"
+                            type="pro"
+                        >
                             Work History + Previous Projects
-                            <img src={arrow} alt="arrow" className={cx(styles.toggleIcon, styles.open)}></img>
+                            <img
+                                src={arrow}
+                                alt="arrow"
+                                className={cx(styles.toggleIcon, styles.open)}
+                            ></img>
                         </div>
                     </Card.Header>
-                        <Card.Body className={cx([styles.workBlock, styles.accordionContent])}>
-                            <Work />
-                        </Card.Body>
+                    <Card.Body
+                        className={cx([
+                            styles.workBlock,
+                            styles.accordionContent
+                        ])}
+                    >
+                        <Work />
+                    </Card.Body>
                 </Card>
                 <Card>
                     <Card.Header>
-                        <div className={styles.qualToggle} as={Button} variant="link" eventKey="1" type="qual">
+                        <div
+                            className={styles.qualToggle}
+                            as={Button}
+                            variant="link"
+                            eventKey="1"
+                            type="qual"
+                        >
                             Technologies + Tools
-                            <img src={arrow} alt="arrow" className={cx(styles.toggleIcon, styles.open)}></img>
+                            <img
+                                src={arrow}
+                                alt="arrow"
+                                className={cx(styles.toggleIcon, styles.open)}
+                            ></img>
                         </div>
                     </Card.Header>
-                        <Card.Body className={styles.accordionContent}>
-                            <Skills />
-                        </Card.Body>
+                    <Card.Body className={styles.accordionContent}>
+                        <Skills />
+                    </Card.Body>
                 </Card>
             </Accordion>
-            <ContactForm />
         </div>
-    )
+    );
 }
